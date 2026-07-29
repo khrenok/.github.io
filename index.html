@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeTrace — R&D студия электроники</title>
+    <link rel="icon" type="image/png" href="images/logo_big.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo_big.png" alt="NodeTrace" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">NodeTrace</span>
+                    <span class="logo-sub">R&D студия электроники</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="#services">Услуги</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#portfolio">Проекты</a>
+                <a href="#process">Процесс</a>
+                <a href="#contact" class="btn btn-outline">Связаться</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">🔬 R&D студия электроники</div>
+            <h1>Разработка электроники <br><span class="accent">под ключ</span></h1>
+            <p class="hero-desc">От идеи до готового устройства. Проектирование схем, печатных плат, встраиваемого ПО и промышленного дизайна для стартапов и корпораций.</p>
+            <p class="hero-tags">Полный цикл разработки • ESP32/Arduino/STM32 • Прототипирование и серия</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                <a href="#portfolio" class="btn btn-ghost">Смотреть кейсы</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="15">0</span>
+                    <span class="stat-label">Реализованных проектов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="21">0</span>
+                    <span class="stat-label">Дней средний срок прототипа</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="98">0</span><span>%</span>
+                    <span class="stat-label">Завершённых проектов в срок</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Лет опыта в embedded</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Компетенции</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Схемотехника</h3>
+                    <p>Проектирование аналоговых и цифровых схем, расчёт цепей питания, выбор компонентов с учётом заданного ценового сегмента.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧩</div>
+                    <h3>Печатные платы</h3>
+                    <p>Многослойные ПБ до 12 слоёв, дифференциальные пары, impedance control, проектирование под высокочастотные сигналы.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Встраиваемое ПО</h3>
+                    <p>Прошивки для ESP32, STM32, Arduino, Raspberry Pi. FreeRTOS, Wi-Fi/BLE стеки, OTA-обновления, низкоуровневые драйверы.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>IoT и связь</h3>
+                    <p>Интеграция с облаком, MQTT, REST API, LoRa, NB-IoT, Zigbee. Построение полноценных экосистем умных устройств.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Промышленный дизайн</h3>
+                    <p>Корпуса под литьё, 3D-печать, CNC. Учёт требований IP-рейтингов, терморасчёт, эргономика.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Прототипирование</h3>
+                    <p>Быстрые прототипы за 2–4 недели. Отладка, тестирование, сертификация (CE, FCC, EAC) и запуск в серию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Тарифы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-badge">🚀 Стартапам</div>
+                    <div class="pricing-price">от 80 000 ₽</div>
+                    <div class="pricing-subtitle">MVP за 2–4 недели</div>
+                    <ul>
+                        <li>Прототип на отладочной плате</li>
+                        <li>Базовая прошивка</li>
+                        <li>Схематика и разводка платы</li>
+                        <li>3D-модель корпуса</li>
+                        <li>Поддержка 2 недели</li>
+                        <li>Консалтинг по развитию проекта</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="pricing-badge">⚙ Бизнесу</div>
+                    <div class="pricing-popular-tag">Популярное</div>
+                    <div class="pricing-price">от 250 000 ₽</div>
+                    <div class="pricing-subtitle">Полноценное устройство</div>
+                    <ul>
+                        <li>Полный цикл разработки</li>
+                        <li>Многослойная плата</li>
+                        <li>Промышленный дизайн</li>
+                        <li>Облачная интеграция</li>
+                        <li>Тестирование и сертификация</li>
+                        <li>Поддержка 3 месяца</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-badge">🏢 Корпорациям</div>
+                    <div class="pricing-price">Индивидуально</div>
+                    <div class="pricing-subtitle">Комплексные интеграции</div>
+                    <ul>
+                        <li>Выделенная R&D-команда</li>
+                        <li>Разработка с нуля под ТЗ</li>
+                        <li>Производственный конвейер</li>
+                        <li>Полная документация</li>
+                        <li>Поддержка и обновления</li>
+                        <li>NDA и эксклюзивные права</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <span class="process-num">01</span>
+                    <h3>Анализ</h3>
+                    <p>Изучаем задачу, аудит существующих решений, формируем техническое задание и дорожную карту.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-num">02</span>
+                    <h3>Проектирование</h3>
+                    <p>Разрабатываем схемотехнику, ПБ, корпус и архитектуру прошивки. Согласовываем промежуточные результаты.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-num">03</span>
+                    <h3>Прототип</h3>
+                    <p>Изготавливаем рабочий образец, пишем прошивку, проводим тестирование и отладку всех модулей.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-num">04</span>
+                    <h3>Запуск</h3>
+                    <p>Готовим документацию для производства, сопровождаем сертификацию и первую производственную партию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Реализованные проекты</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">IoT</span>
+                    <h3>Умная теплица</h3>
+                    <p>Автоматизированная система контроля климата с Wi-Fi модулем, датчиками влажности и полива. Управление через мобильное приложение.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">Industrial</span>
+                    <h3>Промышленный контроллер</h3>
+                    <p>PLC-контроллер на базе STM32 для управления конвейерной линией. Поддержка Modbus RTU/TCP, 16 входов/выходов.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">Medical</span>
+                    <h3>Портативный кардиомонитор</h3>
+                    <p>Носимое устройство для записи ЭКГ с BLE-передачей данных на смартфон. Время работы 72 часа.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">Wearable</span>
+                    <h3>GPS-трекер активности</h3>
+                    <p>Трекер для спортсменов с GNSS, барометром и IMU. Вес 32 г, водозащита IP67.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">Smart Home</span>
+                    <h3>Панель управления умным домом</h3>
+                    <p>Встраиваемая сенсорная панель 7" на Linux с Zigbee хабом. Управление 100+ устройствами.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-tag">Automotive</span>
+                    <h3>Диагностический сканер</h3>
+                    <p>OBD-II сканер с Wi-Fi для грузового транспорта. Поддержка J1939 и J1708 протоколов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Обсудить проект</h2>
+            <p class="contact-desc">Расскажите о задаче — мы подготовим оценку и предложим решение в течение 24 часов.</p>
+            <div class="contact-links">
+                <a href="mailto:info@nodetrace.ru" class="contact-link">📧 nodetrace@mail.ru</a>
+                <a href="https://t.me/NodeTrace1" class="contact-link">💬 Telegram</a>
+                <a href="tel:+79138172429" class="contact-link">📞 +7 (913) 817-24-29</a>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mvzjrkgn" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="text" name="company" placeholder="Компания / Проект">
+                <textarea name="message" rows="4" placeholder="Описание задачи" required></textarea>
+                <button type="submit" class="btn btn-primary btn-large">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo_big.png" alt="NodeTrace" class="logo-img-footer">
+                    <span>NodeTrace</span>
+                    <p>R&D студия электроники. Разработка устройств под ключ.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#pricing">Тарифы</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 NodeTrace. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

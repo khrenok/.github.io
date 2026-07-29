@@ -1,0 +1,6 @@
+const menuBtn=document.querySelector('.mobile-menu-btn'),nav=document.querySelector('.nav');
+if(menuBtn){menuBtn.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.flexDirection='column';nav.style.position='absolute';nav.style.top='72px';nav.style.left='0';nav.style.right='0';nav.style.background='rgba(10,10,15,0.95)';nav.style.padding='24px';nav.style.gap='16px'})}
+const counters=document.querySelectorAll('.stat-num'),animateCounter=el=>{const target=parseInt(el.dataset.target),duration=2000,start=performance.now(),update=now=>{const elapsed=now-start,progress=Math.min(elapsed/duration,1),eased=1-Math.pow(1-progress,3);el.textContent=Math.floor(eased*target);if(progress<1)requestAnimationFrame(update)};requestAnimationFrame(update)};
+const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){animateCounter(entry.target);observer.unobserve(entry.target)}})},{threshold:0.5});
+counters.forEach(c=>observer.observe(c));
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth',block:'start'})})});
