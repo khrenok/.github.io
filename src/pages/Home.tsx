@@ -12,6 +12,7 @@ import {
   Cpu,
   House,
   Mail,
+  MapPin,
   Phone,
   Radio,
   ScanLine,
@@ -102,9 +103,9 @@ export default function Home() {
           <CircuitBackdrop />
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="hero-status"><span className="status-dot" /> R&amp;D / electronics / firmware</div>
+              <div className="hero-status"><span className="status-dot" /> Томск / R&amp;D / electronics / firmware</div>
               <h1>Разработка<br />электроники <span>под ключ.</span></h1>
-              <p className="hero-description">От идеи до готового устройства: схемы, печатные платы, встраиваемое ПО и промышленный дизайн для стартапов и корпораций.</p>
+              <p className="hero-description">R&amp;D-студия из Томска. От идеи до готового устройства: схемы, печатные платы, встраиваемое ПО и промышленный дизайн для стартапов и корпораций по всей России.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#contact">Обсудить задачу <ArrowUpRight size={19} aria-hidden="true" /></a>
                 <a className="text-link" href="#portfolio">Смотреть проекты <ArrowRight size={18} aria-hidden="true" /></a>
@@ -264,6 +265,7 @@ export default function Home() {
                 <a href="mailto:nodetrace@mail.ru"><Mail size={21} aria-hidden="true" /><span><small>Почта</small>nodetrace@mail.ru</span><ArrowUpRight size={18} aria-hidden="true" /></a>
                 <a href="https://t.me/NodeTrace1" target="_blank" rel="noopener noreferrer"><Send size={21} aria-hidden="true" /><span><small>Telegram</small>@NodeTrace1</span><ArrowUpRight size={18} aria-hidden="true" /></a>
                 <a href="tel:+79138172429"><Phone size={21} aria-hidden="true" /><span><small>Телефон</small>+7 (913) 817-24-29</span><ArrowUpRight size={18} aria-hidden="true" /></a>
+                <a href="https://yandex.ru/maps/?text=%D0%A2%D0%BE%D0%BC%D1%81%D0%BA" target="_blank" rel="noopener noreferrer"><MapPin size={21} aria-hidden="true" /><span><small>Локация</small>Томск, Россия · работаем по всей стране</span><ArrowUpRight size={18} aria-hidden="true" /></a>
               </div>
             </div>
             <ContactForm plan={selectedPlan} onPlanChange={setSelectedPlan} />
@@ -285,7 +287,7 @@ export default function Home() {
           </div>
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} NodeTrace. Все права защищены.</span>
-            <span>Схемы / Платы / Firmware / IoT</span>
+            <span>Томск / Россия / Работаем по всей стране</span>
           </div>
         </div>
       </footer>
