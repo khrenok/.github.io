@@ -437,6 +437,8 @@ h2 {
 .form-message { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 24px; padding: 16px; border-radius: 12px; font-size: 13px; }
 .form-message strong, .form-message span { display: block; }
 .form-message span { margin-top: 3px; }
+.form-pending { background: oklch(0.86 0.16 195 / 0.08); color: var(--nt-cyan-400); }
+.form-pending span { color: var(--nt-gray-300); }
 .form-success { background: oklch(0.95 0.23 120 / 0.09); color: var(--color-accent); }
 .form-success span { color: var(--nt-gray-300); }
 .form-error { flex-wrap: wrap; background: oklch(0.76 0.16 35 / 0.09); color: var(--color-error); }
