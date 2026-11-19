@@ -126,6 +126,15 @@ export default function Mascot() {
           <path d="M835 486 C817 460 851 443 835 417 C820 393 851 378 842 346" />
           <path d="M869 486 C852 464 881 446 867 424 C854 403 880 390 873 365" />
         </g>
+
+        <g className="mascot-smile">
+          <path className="smile-outline" d="M455 466 C476 437 498 425 521 425 C545 425 568 438 590 466 C574 486 551 499 522 499 C493 499 472 486 455 466 Z" />
+          <path className="smile-beak" d="M467 462 C483 442 501 434 521 434 C542 434 560 443 577 462 C548 454 497 454 467 462 Z" />
+          <path className="smile-mouth" d="M466 466 C493 458 550 458 580 466 C566 486 546 493 522 493 C497 493 479 485 466 466 Z" />
+          <path className="smile-tongue" d="M494 484 C507 476 536 476 550 484 C542 490 532 492 522 492 C511 492 502 489 494 484 Z" />
+          <circle className="smile-nostril" cx="506" cy="440" r="4.5" />
+          <circle className="smile-nostril" cx="537" cy="440" r="4.5" />
+        </g>
       </svg>
     </div>
   )

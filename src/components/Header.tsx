@@ -48,6 +48,7 @@ export default function Header() {
         <nav id="main-navigation" className={`main-nav ${open ? 'is-open' : ''}`} aria-label="Основная навигация">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} className={active === item.id ? 'is-active' : ''} onClick={() => setOpen(false)}>
+              <span className="nav-bracket" aria-hidden="true">{active === item.id ? '[•]' : '[ ]'}</span>
               {item.label}
             </a>
           ))}

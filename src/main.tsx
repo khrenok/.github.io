@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import '@fontsource-variable/unbounded'
-import '@fontsource-variable/golos-text'
+import '@fontsource-variable/onest'
+import '@fontsource-variable/jetbrains-mono'
 import './index.css'
 import App from './App.tsx'
 

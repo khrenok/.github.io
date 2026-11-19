@@ -69,6 +69,14 @@ function CircuitBackdrop() {
   )
 }
 
+function TechGrid() {
+  return (
+    <div className="tech-grid" aria-hidden="true">
+      {Array.from({ length: 10 }, (_, index) => <span key={index}><i /></span>)}
+    </div>
+  )
+}
+
 function ProjectVisual({ project }: { project: Project }) {
   const Icon = projectIcons[project.id] || CircuitBoard
   return (
@@ -100,11 +108,16 @@ export default function Home() {
       <Header />
       <main id="main">
         <section className="hero" id="top">
+          <TechGrid />
           <CircuitBackdrop />
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="hero-status"><span className="status-dot" /> Томск / R&amp;D / electronics / firmware</div>
-              <h1>Разработка<br />электроники <span>под ключ.</span></h1>
+              <h1 aria-label="Разработка электроники под ключ.">
+                <span className="hero-line" aria-hidden="true"><span>Разработка</span></span>
+                <span className="hero-line" aria-hidden="true"><span>электроники</span></span>
+                <span className="hero-line hero-line-accent" aria-hidden="true"><span>под ключ.</span></span>
+              </h1>
               <p className="hero-description">R&amp;D-студия из Томска. От идеи до готового устройства: схемы, печатные платы, встраиваемое ПО и промышленный дизайн для стартапов и корпораций по всей России.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#contact">Обсудить задачу <ArrowUpRight size={19} aria-hidden="true" /></a>
@@ -127,6 +140,7 @@ export default function Home() {
                   <span>&gt; idea.compile()</span>
                   <strong>working_device<span className="typing-cursor" aria-hidden="true">_</span></strong>
                 </div>
+                <span className="visual-scanner" aria-hidden="true" />
               </div>
               <div className="visual-note visual-note-top"><ScanLine size={16} aria-hidden="true" /> hardware + software</div>
               <div className="visual-note visual-note-bottom"><span>01</span> ваш внешний R&amp;D-отдел</div>
